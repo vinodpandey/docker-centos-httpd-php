@@ -21,7 +21,7 @@ for Linux/Windows add host IP address
 ```
 cd to wordpress files root directory and start container  
 ```
-docker run -t -d -p 80:80 --name centos -v $(pwd):/var/www/html vinodpandey/centos:1.0
+docker run -t -d -p 80:80 --name centos -v "$(pwd)":/var/www/html vinodpandey/centos:1.0
 ```
 access http://localhost or update local hosts file 
 ```
